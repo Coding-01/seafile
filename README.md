@@ -10,9 +10,11 @@
 
     systemctl enable docker
 
+# pull image && Make Container
+
     docker pull zhangpengzhan456/seafile:6.2.5
 
-docker run -itd -p 10001:10001 -p 12001:12001 -p 8000:8000 -p 8080:8080 -p 8082:8082 -v /data:/opop zhangpengzhan456/seafile:6.2.5 -- /bin/bash
+    docker run -itd -p 10001:10001 -p 12001:12001 -p 8000:8000 -p 8080:8080 -p 8082:8082 -v /data:/opop zhangpengzhan456/seafile:6.2.5 -- /bin/bash
 
 mkdir /opop && cd /opop
 wget http://seafile-downloads.oss-cn-shanghai.aliyuncs.com/seafile-server_6.2.5_x86-64.tar.gz
