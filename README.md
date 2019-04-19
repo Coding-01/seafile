@@ -51,9 +51,9 @@
     ./seafile.sh start            //start seafile 
 
     ./seahub.sh start             //start sseahub
-            [ admin email ]      	  <Email>
-    	    [ admin password ]   	  <Password>
-    	    [ admin password again ]  <Password>
+        [ admin email ]      	  <Email>
+        [ admin password ]   	  <Password>
+        [ admin password again ]  <Password>
 
 
 # Access on the host Browser
