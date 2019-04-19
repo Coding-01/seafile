@@ -61,3 +61,7 @@
     192.168.1.210:8000             		//8000 port is seahub 
         username: <Email>
         password: <Password>
+
+# restart seafile
+    ./seafile.sh restart    # 停止当前的 Seafile 进程，然后重启 Seafile
+    ./seahub.sh restart     # 停止当前的 Seahub 进程，并在 8000 端口重新启动 Seahub
