@@ -1,11 +1,16 @@
 #docker install
-yum -y install yum-utils device-mapper-persistent-data lvm2	
-yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-yum -y install docker-ce 
-systemctl start docker
-systemctl enable docker
 
-docker pull zhangpengzhan456/seafile:6.2.5
+    yum -y install yum-utils device-mapper-persistent-data lvm2	
+
+    yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+
+    yum -y install docker-ce 
+
+    systemctl start docker
+
+    systemctl enable docker
+
+    docker pull zhangpengzhan456/seafile:6.2.5
 
 docker run -itd -p 10001:10001 -p 12001:12001 -p 8000:8000 -p 8080:8080 -p 8082:8082 -v /data:/opop zhangpengzhan456/seafile:6.2.5 -- /bin/bash
 
