@@ -59,6 +59,5 @@
 # Access on the host Browser：
 
     192.168.1.210:8000             		//8000 port is seahub 
-
         username: <Email>
         password: <Password>
